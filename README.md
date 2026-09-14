@@ -1,3 +1,5 @@
+![Power Platform DevOps Studio](https://raw.githubusercontent.com/dylanhaskins/PowerPlatform-DevOpsStudio-Releases/main/assets/banner.svg)
+
 # Power Platform DevOps Studio Releases
 
 This repository hosts the packaged releases for **Power Platform DevOps Studio**.
