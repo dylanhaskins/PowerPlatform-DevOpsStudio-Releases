@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Power Platform DevOps Studio">
+  <title>Power Platform DevOps Studio</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101A2E"/>
+      <stop offset="0.55" stop-color="#0F1729"/>
+      <stop offset="1" stop-color="#0C1322"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#1F8FFF" stop-opacity="0.30"/>
+      <stop offset="0.55" stop-color="#1F8FFF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#1F8FFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="markFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1F8FFF" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#1F8FFF" stop-opacity="0.12"/>
+    </linearGradient>
+
+    <linearGradient id="markStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4EBFF4" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#1F8FFF" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1F8FFF"/>
+      <stop offset="0.45" stop-color="#4EBFF4"/>
+      <stop offset="0.8" stop-color="#33C173"/>
+      <stop offset="1" stop-color="#33C173" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="track" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4EBFF4" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#33C173" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="fadeRight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="0.35" stop-color="#666666"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#2A3D63"/>
+    </pattern>
+
+    <mask id="dotMask">
+      <rect width="1200" height="300" fill="url(#fadeRight)"/>
+    </mask>
+
+    <clipPath id="frame">
+      <rect width="1200" height="300" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="300" fill="url(#bg)"/>
+    <rect width="1200" height="300" fill="url(#dots)" mask="url(#dotMask)" opacity="0.55"/>
+    <ellipse cx="150" cy="150" rx="480" ry="300" fill="url(#glow)"/>
+
+    <!-- brand mark: the "PP" tile from the app sidebar -->
+    <g>
+      <rect x="80" y="102" width="96" height="96" rx="26" fill="url(#markFill)"/>
+      <rect x="80.75" y="102.75" width="94.5" height="94.5" rx="25.25" fill="none" stroke="url(#markStroke)" stroke-width="1.5"/>
+      <text x="128" y="151" text-anchor="middle" dominant-baseline="central"
+            font-family="Segoe UI, system-ui, -apple-system, Helvetica Neue, Arial, sans-serif"
+            font-size="42" font-weight="700" letter-spacing="1" fill="#4EBFF4">PP</text>
+    </g>
+
+    <!-- wordmark -->
+    <g font-family="Segoe UI, system-ui, -apple-system, Helvetica Neue, Arial, sans-serif">
+      <text x="212" y="116" font-size="18" font-weight="600" letter-spacing="5.4" fill="#7588A3">POWER PLATFORM</text>
+      <text x="210" y="181" font-size="62" font-weight="700" letter-spacing="-0.8" fill="#E1E7EF">DevOps Studio</text>
+      <text x="212" y="217" font-size="18" font-weight="400" letter-spacing="0.2" fill="#7588A3">Application lifecycle management for Microsoft Power Platform</text>
+    </g>
+
+    <!-- pipeline motif -->
+    <g transform="translate(902 150)">
+      <line x1="0" y1="0" x2="216" y2="0" stroke="#1B294B" stroke-width="3" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="216" y2="0" stroke="url(#track)" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+      <g stroke="#0F1729" stroke-width="3">
+        <circle cx="0" cy="0" r="9" fill="#4EBFF4"/>
+        <circle cx="72" cy="0" r="9" fill="#1F8FFF"/>
+        <circle cx="144" cy="0" r="9" fill="#F8AE30"/>
+        <circle cx="216" cy="0" r="9" fill="#33C173"/>
+      </g>
+      <circle cx="216" cy="0" r="17" fill="none" stroke="#33C173" stroke-width="1.5" opacity="0.45"/>
+      <g font-family="Segoe UI, system-ui, -apple-system, Helvetica Neue, Arial, sans-serif"
+         font-size="12" font-weight="600" letter-spacing="1.4" fill="#5C6E8C" text-anchor="middle">
+        <text x="0" y="34">DEV</text>
+        <text x="72" y="34">BUILD</text>
+        <text x="144" y="34">TEST</text>
+        <text x="216" y="34">PROD</text>
+      </g>
+    </g>
+
+    <rect x="0" y="296" width="1200" height="4" fill="url(#rule)"/>
+    <rect x="0.75" y="0.75" width="1198.5" height="298.5" rx="19.25" fill="none" stroke="#1B294B" stroke-width="1.5"/>
+  </g>
+</svg>
